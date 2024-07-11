@@ -202,3 +202,38 @@ footer {
   .a-link{
     text-decoration: none;
   }
+
+  .about-us, .our-story, .our-team, .contact-details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2em;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+}
+
+.about-us h2, .our-story h2, .our-team h2, .contact-details h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #555;
+}
+
