@@ -20,11 +20,11 @@
             <div class="navbar-wrap a1">
                 <a href="productdescription.html" class="a-link navlink active">Shop Now</a>
                 <a href="#" class="a-link navlink active">Blogs</a>
-                <a href="#" class="a-link navlink active">About Us</a>
+                <a href="AboutUs.html" class="a-link navlink active">About Us</a>
                 <a href="contact.html" class="a-link navlink">Contact Us</a>
 
 
-                <a href="#" class="btn a-link">LOGIN</a>
+                
             </div>
         </nav>
     </header>
@@ -41,14 +41,14 @@
             <article class="product-item" data-id="2" data-name="Product 2" data-price="29.99">
                 <img src="Images/WD5TB/en_catalog_list_19b14_vvddcrwkj5.jpg" alt="Product 2">
                 <h2>HP v150w</h2>
-                <p class="description">This product is even better.</p>
+                <p class="description">Supports USB 2.0</p>
                 <p class="price">$29.99</p>
                 <button class="add-to-cart">Shop Now</button>
             </article>
             <article class="product-item" data-id="1" data-name="Product 1" data-price="19.99">
                 <img src="Images/WD5TB/en_catalog_list_19d19_m3m97k8469.jpg" alt="Product 1">
                 <h2>HP x796w</h2>
-                <p class="description">This is a great product.</p>
+                <p class="description">Only Availble in Store</p>
                 <p class="price">$19.99</p>
                 <button class="add-to-cart">Shop Now</button>
             </article>
@@ -61,46 +61,20 @@
             </article>
             <article class="product-item" data-id="1" data-name="Product 1" data-price="19.99">
                 <img src="Images/WD5TB/en_catalog_list_23d10_m89batf6k3.jpg" alt="Product 1">
-                <h2>Product 1</h2>
-                <p class="description">This is a great product.</p>
+                <h2>HP 113 x64 3.0</h2>
+                <p class="description">Dual in One Product</p>
                 <p class="price">$19.99</p>
                 <button class="add-to-cart">Shop Now</button>
             </article>
             <article class="product-item" data-id="2" data-name="Product 2" data-price="29.99">
                 <img src="Images/WD5TB/en_catalog_list_23k28_p4y6z9mwkx.jpg" alt="Product 2">
-                <h2>Product 2</h2>
-                <p class="description">This product is even better.</p>
-                <p class="price">$29.99</p>
+                <h2>HP 667w</h2>
+                <p class="description">Availble in only 256GB supports transfer rate of 3000 Mbs.</p>
+                <p class="price">$249.99</p>
                 <button class="add-to-cart">Shop Now</button>
             </article>
-            <article class="product-item" data-id="1" data-name="Product 1" data-price="19.99">
-                <img src="Images/WD5TB/ASSET_MMS_71788822.webp" alt="Product 1">
-                <h2>Product 1</h2>
-                <p class="description">This is a great product.</p>
-                <p class="price">$19.99</p>
-                <button class="add-to-cart">Shop Now</button>
-            </article>
-            <article class="product-item" data-id="2" data-name="Product 2" data-price="29.99">
-                <img src="Images/WD5TB/ASSET_MMS_71788824.webp" alt="Product 2">
-                <h2>Product 2</h2>
-                <p class="description">This product is even better.</p>
-                <p class="price">$29.99</p>
-                <button class="add-to-cart">Shop Now</button>
-            </article>
-            <article class="product-item" data-id="1" data-name="Product 1" data-price="19.99">
-                <img src="Images/WD5TB/ASSET_MMS_71788826.webp" alt="Product 1">
-                <h2>Product 1</h2>
-                <p class="description">This is a great product.</p>
-                <p class="price">$19.99</p>
-                <button class="add-to-cart">Shop Now</button>
-            </article>
-            <article class="product-item" data-id="2" data-name="Product 2" data-price="29.99">
-                <img src="Images/WD5TB/ASSET_MMS_71788829.webp" alt="Product 2">
-                <h2>Product 2</h2>
-                <p class="description">This product is even better.</p>
-                <p class="price">$29.99</p>
-                <button class="add-to-cart">Shop Now</button>
-            </article>
+            
+           
 
         </section>
         <div class="checkout-popup hidden">
@@ -122,9 +96,9 @@
                     </div>
                     <div class="form-group">
                         <label for="card-info">Card Information</label>
-                        <input type="text" id="card-info" name="card-info" placeholder="Card Number" required>
-                        <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
-                        <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" required>
+                        <input type="text" id="card-info" name="card-info" placeholder="Card Number" maxlength="16" pattern="\d{16}" required>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}"  maxlength="4" required>
+                        <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" maxlength="3" pattern="\d{3}" required>
                     </div>
                     <button type="submit">Place Order</button>
                 </form>
